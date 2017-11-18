@@ -145,6 +145,7 @@ end
 % validate the grader's response
 function response = validateResponse(resp)
   % test if the response is json or an HTML page
+  fprintf('ajsdkfjaksdjfk');
   isJson = length(resp) > 0 && resp(1) == '{';
   isHtml = findstr(lower(resp), '<html');
 
@@ -175,5 +176,5 @@ end
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function submissionUrl = submissionUrl()
-  submissionUrl = 'https://www-origin.coursera.org/api/onDemandProgrammingImmediateFormSubmissions.v1';
+  submissionUrl = 'https://www.coursera.org/api/onDemandProgrammingImmediateFormSubmissions.v1';
 end

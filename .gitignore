@@ -1,3 +1,11 @@
 .DS_Store
-*.*~
-.#*
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+octave-workspace
+token.mat

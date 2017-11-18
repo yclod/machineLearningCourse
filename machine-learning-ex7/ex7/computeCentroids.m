@@ -25,8 +25,13 @@ centroids = zeros(K, n);
 %
 % Note: You can use a for-loop over the centroids to compute this.
 %
-
-
+tempSums = zeros(K, n);
+counts = zeros(K, 1);
+for i = 1:m
+  tempSums(idx(i),:) += X(i,:);
+  counts(idx(i)) += 1;
+endfor
+centroids = tempSums ./ repmat(counts, 1, n);
 
 
 
